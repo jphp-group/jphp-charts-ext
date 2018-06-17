@@ -1,0 +1,40 @@
+apply plugin: "java"
+apply plugin: "idea"
+apply plugin: "eclipse"
+
+version '1.0.2'
+
+sourceSets {
+    main.java.srcDirs = ['src-jvm/main/java']
+    main.resources.srcDirs = ['src-jvm/main/resources']
+}
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  jcenter()
+  maven { url 'https://oss.sonatype.org/content/groups/public' }
+}
+
+configurations { provided }
+
+sourceSets { main { compileClasspath += configurations.provided } }
+
+dependencies {
+  provided files('vendor/jphp-runtime/jars/jphp-runtime-1.0.3.jar',
+ 'vendor/jphp-gui-ext/jars/jphp-gui-ext-0.9.3-SNAPSHOT.jar',
+ 'vendor/jphp-xml-ext/jars/jphp-xml-ext-0.9.3-SNAPSHOT.jar',
+ 'vendor/jphp-graphic-ext/jars/jphp-graphic-ext-0.9.3-SNAPSHOT.jar')
+
+}
+
+jar {
+   destinationDir = file('jars/')
+   baseName = 'x-jphp-charts-ext'
+}
+
+task copyJars(type: Copy) {
+  from project.configurations.compile
+  into file(projectDir.path + '/jars/')
+  rename { name -> 'x-' + name }
+}

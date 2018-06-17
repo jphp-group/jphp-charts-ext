@@ -1,0 +1,43 @@
+name: jphp-charts-ext
+version: 1.0.2
+
+plugins:
+- Hub
+- Doc
+- Gradle
+- DevelNextBundle
+
+deps:
+  jphp-runtime: '*'
+  jphp-gui-ext: '*'
+
+  
+devDeps:
+  jphp-core: '*'
+  dn-bundle-plugin: '*'
+
+  
+sources:
+- src
+
+hub:
+  login: broelik@gmail.com
+
+config:
+  ignore:
+  - /sandbox/**
+  - /.idea/**
+  - /*.iml
+  - /.git/**
+  - /examples/**
+  - /package.hub.yml
+  - /bundle/**
+  - /src-bundle/**
+develnext-bundle:
+  version: 1.0.0
+  name: ChartsBundle
+  author: broelik
+  icon: "develnext/bundle/charts/icon32.png"
+  description: "Пакет для работы с графиками"
+  group: "network"
+  class: "develnext\\bundle\\charts\\ChartsBundle"

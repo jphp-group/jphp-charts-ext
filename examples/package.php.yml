@@ -1,0 +1,15 @@
+name: jphp-charts-examples
+version: 1.0.0
+description: Examples for jphp-charts extension
+deps:
+  jphp-core: '*'
+  jphp-zend-ext: '*'
+  jphp-gui-ext: '*'
+  jphp-charts-ext: '*'
+  jphp-gui-desktop-ext: '*'
+plugins:
+- App
+sources:
+- src
+includes:
+- index.php
