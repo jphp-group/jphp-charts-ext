@@ -13,10 +13,10 @@ import php.runtime.reflection.ClassEntity;
 @Reflection.Name("UXPieChart")
 public class UXPieChart extends UXChart<PieChart>{
     interface WrappedInterface{
-        @Reflection.Property Boolean clockwise();
-        @Reflection.Property Double labelLineLength();
-        @Reflection.Property Boolean labelsVisible();
-        @Reflection.Property Double startAngle();
+        @Reflection.Property boolean clockwise();
+        @Reflection.Property double labelLineLength();
+        @Reflection.Property boolean labelsVisible();
+        @Reflection.Property double startAngle();
     }
 
     public UXPieChart(Environment env, PieChart wrappedObject) {

@@ -22,15 +22,15 @@ import php.runtime.reflection.ClassEntity;
 @Abstract
 public class UXAxis<T extends Axis> extends UXRegion<T>{
 	interface WrappedInterface{
-		@Property Boolean animated();
-		@Property Boolean autoRanging();
+		@Property boolean animated();
+		@Property boolean autoRanging();
 		@Property String label();
 		@Property Side side();
-		@Property Double tickLabelGap();
-		@Property Double tickLabelRotation();
-		@Property Boolean tickLabelsVisible();
-		@Property Double tickLength();
-		@Property Boolean tickMarkVisible();
+		@Property double tickLabelGap();
+		@Property double tickLabelRotation();
+		@Property boolean tickLabelsVisible();
+		@Property double tickLength();
+		@Property boolean tickMarkVisible();
 	}
 
 	public UXAxis(Environment env, T wrappedObject){

@@ -15,7 +15,7 @@ import php.runtime.reflection.ClassEntity;
 @Name("UXLineChart")
 public class UXLineChart extends UXXYChart<LineChart>{
 	interface WrappedInterface{
-		@Property Boolean createSymbols();
+		@Property boolean createSymbols();
 	}
 	
 	public UXLineChart(Environment env, LineChart wrappedObject){

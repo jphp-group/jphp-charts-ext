@@ -14,8 +14,8 @@ import php.runtime.reflection.ClassEntity;
 @Name("UXNumberAxis")
 public class UXNumberAxis extends UXValueAxis<NumberAxis>{
 	interface WrappedInterface{
-		@Property Double tickUnit();
-		@Property Boolean forceZeroInRange();
+		@Property double tickUnit();
+		@Property boolean forceZeroInRange();
 	}
 	
 	public UXNumberAxis(Environment env, NumberAxis wrappedObject){

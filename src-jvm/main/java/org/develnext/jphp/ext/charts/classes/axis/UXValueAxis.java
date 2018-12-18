@@ -15,12 +15,12 @@ import php.runtime.reflection.ClassEntity;
 @Abstract
 public class UXValueAxis<T extends ValueAxis> extends UXAxis<T>{
 	interface WrappedInterface{
-		@Property Double lowerBound();
-		@Property Integer minorTickCount();
-		@Property Double minorTickLength();
-		@Property Boolean minorTickVisible();
-		@Property Double scale();
-		@Property Double upperBound();
+		@Property double lowerBound();
+		@Property int minorTickCount();
+		@Property double minorTickLength();
+		@Property boolean minorTickVisible();
+		@Property double scale();
+		@Property double upperBound();
 	}
 	
 	public UXValueAxis(Environment env, T wrappedObject){

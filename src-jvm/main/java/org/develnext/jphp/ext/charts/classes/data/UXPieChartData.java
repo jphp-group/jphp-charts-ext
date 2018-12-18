@@ -17,7 +17,7 @@ public final class UXPieChartData extends BaseWrapper<PieChart.Data> {
         @Reflection.Property PieChart chart();
         @Reflection.Property String name();
         @Reflection.Property Node node();
-        @Reflection.Property Double pieValue();
+        @Reflection.Property double pieValue();
     }
 
     public UXPieChartData(Environment env, PieChart.Data wrappedObject) {

@@ -15,7 +15,7 @@ import php.runtime.reflection.ClassEntity;
 @Name("UXStackedAreaChart")
 public class UXStackedAreaChart extends UXXYChart<StackedAreaChart>{
 	interface WrappedInterface{
-		@Property Boolean createSymbols();
+		@Property boolean createSymbols();
 	}
 
 	public UXStackedAreaChart(Environment env, StackedAreaChart wrappedObject){

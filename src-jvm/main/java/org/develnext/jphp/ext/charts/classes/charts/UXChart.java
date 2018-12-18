@@ -18,9 +18,9 @@ import php.runtime.reflection.ClassEntity;
 @Abstract
 public class UXChart<T extends Chart> extends UXRegion<T>{
 	interface WrappedInterface{
-		@Property Boolean animated();
+		@Property boolean animated();
 		@Property Side legendSide();
-		@Property Boolean legendVisible();
+		@Property boolean legendVisible();
 		@Property String title();
 		@Property Side titleSide();
 	}

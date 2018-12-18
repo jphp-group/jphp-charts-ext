@@ -15,8 +15,8 @@ import php.runtime.reflection.ClassEntity;
 @Name("UXBarChart")
 public class UXBarChart extends UXXYChart<BarChart>{
 	interface WrappedInterface{
-		@Property Double barGap();
-		@Property Double categoryGap();
+		@Property double barGap();
+		@Property double categoryGap();
 	}
 	
 	public UXBarChart(Environment env, BarChart wrappedObject){

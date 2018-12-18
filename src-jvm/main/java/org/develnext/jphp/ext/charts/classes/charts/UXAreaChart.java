@@ -15,7 +15,7 @@ import php.runtime.reflection.ClassEntity;
 @Name("UXAreaChart")
 public class UXAreaChart extends UXXYChart<AreaChart>{
 	interface WrappedInterface{
-		@Property Boolean createSymbols();
+		@Property boolean createSymbols();
 	}
 	
 	public UXAreaChart(Environment env, AreaChart wrappedObject){

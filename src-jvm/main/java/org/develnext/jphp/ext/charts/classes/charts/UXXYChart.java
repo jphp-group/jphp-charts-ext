@@ -17,12 +17,12 @@ import php.runtime.reflection.ClassEntity;
 @Abstract
 public class UXXYChart<T extends XYChart> extends UXChart<T>{
 	interface WrappedInterface{
-		@Property Boolean alternativeColumnFillVisible();
-		@Property Boolean alternativeRowFillVisible();
-		@Property Boolean horizontalGridLinesVisible();
-		@Property Boolean horizontalZeroLineVisible();
-		@Property Boolean verticalGridLinesVisible();
-		@Property Boolean verticalZeroLineVisible();
+		@Property boolean alternativeColumnFillVisible();
+		@Property boolean alternativeRowFillVisible();
+		@Property boolean horizontalGridLinesVisible();
+		@Property boolean horizontalZeroLineVisible();
+		@Property boolean verticalGridLinesVisible();
+		@Property boolean verticalZeroLineVisible();
 		@Property("series") ObservableList<XYChart.Series> data();
 		Axis getXAxis();
 		Axis getYAxis();

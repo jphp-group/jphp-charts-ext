@@ -16,10 +16,10 @@ import php.runtime.reflection.ClassEntity;
 @Final
 public final class UXCategoryAxis extends UXAxis<CategoryAxis>{
 	interface WrappedInterface{
-		@Property Double categorySpacing();
-		@Property Double endMargin();
-		@Property Boolean gapStartAndEnd();
-		@Property Double startMargin();
+		@Property double categorySpacing();
+		@Property double endMargin();
+		@Property boolean gapStartAndEnd();
+		@Property double startMargin();
 	}
 	
 	public UXCategoryAxis(Environment env, CategoryAxis wrappedObject){
